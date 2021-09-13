@@ -91,14 +91,12 @@ function onGalleryElemClickOpenModal(evt) {
   }
 
   const bigImageLink = evt.target.dataset.source;
-  console.log(bigImageLink);
 
   modalLightbox.classList.add('is-open');
   window.addEventListener('keydown', onEscKeyPressCloseModal);
 
   modalImage.src = bigImageLink;
   modalImage.alt = evt.target.alt;
-  console.log(modalImage);
 }
 
 modalCloseBtn.addEventListener('click', onModalClose);
